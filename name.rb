@@ -2,12 +2,18 @@
 #Write a program called name.rb that asks the user to type in their name
 #and then prints out a greeting message with their name included.
 
-def greet(name)
-  puts "Hello #{name}, how are you doing?"
+def greet(first_name,last_name)
+  puts "Hello #{first_name} #{last_name}, how are you doing?"
 end
 
 
-puts "Enter your name: "
-name = gets.chomp
+puts "Enter your first name: "
+first_name = gets.chomp
 
-greet(name)
+puts "Enter your last name: "
+last_name = gets.chomp
+
+greet(first_name,last_name)
+
+
+10.times {puts first_name last_name}
